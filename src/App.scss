@@ -1,0 +1,176 @@
+// Global Provider
+
+// Roboto Mono (400, 500)
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
+
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+
+  @media screen and (min-width: $mobile-width) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+p {
+  margin-top: 0;
+  max-width: 550px;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  button {
+    margin: 0.4rem 0 0 auto;
+    padding: 0.5rem 1rem;
+  }
+}
+
+button.int-button {
+  font-size: 1.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+input {
+  padding: 0.4rem;
+}
+
+#App {
+  main#view {
+    padding: 0.75rem;
+  }
+
+  .component {
+    padding: 1rem;
+  }
+
+  .globals-container {
+    max-width: 100%;
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #06d6a0;
+
+    code {
+      pre {
+        white-space: pre-line;
+
+        .indent {
+          padding-left: 1rem;
+        }
+
+        .headline-code {
+          p {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+
+  .remove-news-button {
+    color: red;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .consumers-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+
+    > div {
+      flex: 0 1 49%;
+      // margin-bottom: 1rem;
+
+      @media screen and (max-width: 500px) {
+        flex: 0 1 100%;
+      }
+    }
+
+    .consumer,
+    .provider {
+      margin-bottom: 1rem;
+    }
+
+    .consumer {
+      background-color: #118ab2;
+    }
+    .provider {
+      background-color: #ffd166;
+    }
+  }
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin-top: 1rem;
+
+  .news-listing {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0.2rem 0;
+    padding: 0.4rem 0.2rem;
+    background-color: #fefefe;
+
+    i {
+      font-size: 0.6rem;
+      color: #aaa;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 0 0 1rem;
+      word-break: break-word;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 3rem 0.6rem;
+  background-color: #d9e9ee;
+
+  p {
+    margin: 0 auto;
+  }
+}

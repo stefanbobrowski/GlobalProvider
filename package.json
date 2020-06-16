@@ -1,0 +1,41 @@
+{
+  "name": "globalprovider",
+  "version": "1.0.0",
+  "description": "Global Provider: Scalable global state management with React (useContext, useReducer)",
+  "main": "index.js",
+  "keywords": [
+    "React",
+    "Hooks",
+    "useContext",
+    "useReducer",
+    "JavaScript",
+    "Node.js",
+    "SASS",
+    "react",
+    "state",
+    "state management",
+    "reducer",
+    "context",
+    "global state",
+    "functional",
+    "predictable",
+    "stefanbobrowski.com"
+  ],
+  "author": "Stefan Bobrowski",
+  "license": "MIT",
+  "scripts": {
+    "clean": "node distCleaner.js",
+    "start": "parcel src/index.html --open",
+    "prod": "npm run clean && parcel build src/index.html"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.8"
+  }
+}
