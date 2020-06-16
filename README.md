@@ -1,13 +1,11 @@
 # Global Provider
 
-Global Provider is a scalable global state management system for React applications. Share application state with all components.
+**Global Provider is a scalable global state management system for React applications. Share application state with all components.**
 
-Built with React. Leverages useContext and useReducer Hooks.
+_Built with React. Leverages useContext and useReducer Hooks._
 
-Install packages
+Install packages: `npm i`
 
-`npm i`
+Run development server (Parcel bundler, http://localhost:1234/): `npm start`
 
-Run development server on http://localhost:1234/ (parcel bundler)
-
-`npm start`
+https://stefanbobrowski.com
